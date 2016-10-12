@@ -1,9 +1,10 @@
 /**
  * Created by Senk on 10/12/2016.
  */
-var hidestat = function(){
+
+var hidestatus = function(){
     if(window.StatusBar){
         StatusBar.hide();
     }
-    setTimeout(hidestat, 3000);
+    setTimeout(hidestatus, 3000);
 };
