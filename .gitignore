@@ -60,3 +60,4 @@ $RECYCLE.BIN/
 .cordova/
 hooks/
 platforms/
+.idea/
