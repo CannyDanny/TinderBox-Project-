@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"  media="all"/>
     <link rel="stylesheet" type="text/css" href="css/mypage.css"  media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css"  media="all"/>
 
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
@@ -12,6 +13,21 @@
     <script type="text/javascript" src="js/mypage.js"></script>
 </head>
 <body>
-<a href="mypage.html" class="ui-btn">Sajt</a>
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Page Title</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <p>Page content goes here.</p>
+        <a href="mypage.html" class="ui-btn">Sajt</a>
+        <i class="fa fa-camera-retro fa-5x"></i>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
 </body>
 </html>
