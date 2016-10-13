@@ -14,6 +14,13 @@ body{
     width: 100%;
     background-color: rgba(4,53,64,0.9);
 }
+#language{
+    color: white;
+    float: right;
+    font-size: 4vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+}
 #logopadding{
     padding-top: 40%;
 }
@@ -74,11 +81,13 @@ input:-ms-input-placeholder {
     padding-bottom: 3%;
     padding-top: 3%;
     text-align: center;
+    font-size: 30px;
 }
 #password{
     padding-bottom: 3%;
     padding-top: 3%;
     text-align: center;
+    font-size: 30px;
 }
 #margin{
     margin-bottom: 20px;
