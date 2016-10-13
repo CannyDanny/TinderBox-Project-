@@ -1,19 +1,19 @@
 body{
 
   }
-#layer{
-    height: 100vh;
-    width: 100%;
+.layer{
     background-image: url("images/login/login_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(0.9);
+
 }
-#page{
-    height: 100vh;
-    width: 100%;
+#background_layer{
     background-color: rgba(4,53,64,0.9);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
 }
+
 #language{
     color: white;
     float: right;
@@ -21,19 +21,15 @@ body{
     margin-right: 2vw;
     margin-top: 1vw;
 }
-#logopadding{
-    padding-top: 40%;
-}
 .logo{
-    height: 15%;
-    width: 25%;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    padding: 2vh;
     background-color: white;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2.5%;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    margin: auto;
+    margin-top: 15vh;
 }
 #logoimg{
     width: 100%;
@@ -45,8 +41,6 @@ body{
 }
 #login{
     padding-top: 10%;
-}
-#loginform{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -79,18 +73,18 @@ input:-ms-input-placeholder {
     font-weight: bold;
     text-align: center;
 }
-#username{
+#username, #password{
+    vertical-align: middle;
     padding-bottom: 3%;
     padding-top: 3%;
+    margin: auto;
+    position: relative;
+    left: 4vw;
+    top: 2vw;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.2em;
 }
-#password{
-    padding-bottom: 3%;
-    padding-top: 3%;
-    text-align: center;
-    font-size: 30px;
-}
+
 #margin{
     margin-bottom: 20px;
 }
@@ -105,13 +99,13 @@ input:-ms-input-placeholder {
 }
 #submitbutton{
     margin-left: auto !important;
-    margin-right: auto !important;;
-    padding-top: 5vw !important;;
-    padding-bottom: 5vw !important;;
-    color: white !important;;
-    background-color: transparent !important;;
-    width: 20vw;
-    font-size: 30px;
+    margin-right: auto !important;
+    padding-top: 5vw !important;
+    padding-bottom: 5vw !important;
+    color: white !important;
+    background-color: transparent !important;
+    width: auto;
+    font-size: 1.5em;
     border: none;
 }
 #apply{
@@ -123,5 +117,5 @@ input:-ms-input-placeholder {
     color: white;
     background-color: transparent;
     border-radius: 10px;
-    margin-top: 40%;
+
 }

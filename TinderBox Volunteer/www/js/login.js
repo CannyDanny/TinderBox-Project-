@@ -1,7 +1,7 @@
 /**
  * Created by Senk on 10/12/2016.
  */
-var attempt = 3; // Variable to count number of attempts.
+var attempt = 20; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate(){
     var username = document.getElementById("username").value;
@@ -21,4 +21,7 @@ function validate(){
             return false;
         }
     }
+}
+function myFunction() {
+    alert("Doesnt function");
 }
