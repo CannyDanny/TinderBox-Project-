@@ -14,6 +14,13 @@ body{
     width: 100%;
     background-color: rgba(4,53,64,0.9);
 }
+#language{
+    color: white;
+    float: right;
+    font-size: 4vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+}
 #logopadding{
     padding-top: 40%;
 }
