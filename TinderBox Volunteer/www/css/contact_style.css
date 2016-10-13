@@ -3,8 +3,8 @@
     width: 100vw;
     height: 100vh;
     background-image: url("images/background-imgs/contact_bg.jpg");
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 i {
     color: white;
@@ -22,16 +22,15 @@ i {
     border: none;
 }
 .back-btn {
-    width: 18%;
+    width: 18vw;
     height: 9vh;
     background-color: #043540;
     position: relative;
 }
 .headline-box {
-    width: 80%;
+    width: 76vw;
     height: 9vh;
     background-color: #043540;
-    position: relative;
 }
 .headline-box h1 {
     font-size: 2em;
@@ -42,25 +41,23 @@ i {
     transform: translate(-50%, -50%);
 }
 #main {
-    width: 96vw;
-    margin: auto;
+    width: 96vw !important;
+    margin: auto !important;
 }
 #panel-wrapper {
-    width: 100%;
-    position: relative;
     background-color: rgba(4,53,64,0.9);
 }
 #contact-info-panel {
     width: 70%;
     margin: 0 auto;
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     padding: 2vh 0 2vh 0;
     position: relative;
 }
 #contact-info-panel img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 #contact-info-panel p {
     font-size: 1.6em;
@@ -68,4 +65,24 @@ i {
 }
 #contact-info-panel p span {
     display: block;
+}
+#mail-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#mail-title {
+    width: 100%;
+    position: relative;
+    background-color: rgba(4,53,64,0.9);
+}
+#mail-box button {
+    background-color: rgba(4,53,64,0.9);
+    color: white;
+    border: none;
+    border-radius: 0 0 0;
+    height: 4vh;
+    font-size: 1.2em;
+}
+#mail-box button:focus {
+    background-color: rgba(241,136,121,1);
 }
