@@ -61,3 +61,19 @@ $RECYCLE.BIN/
 hooks/
 platforms/
 .idea/
+fonts/
+TinderBox Volunteer/.cordova/
+TinderBox Volunteer/hooks/
+TinderBox Volunteer/platforms/
+TinderBox Volunteer/.idea/
+TinderBox Volunteer/fonts/
+*/.cordova/
+*/hooks/
+*/platforms/
+*/.idea/
+*/fonts/
+*/TinderBox Volunteer/.cordova/
+*/TinderBox Volunteer/hooks/
+*/TinderBox Volunteer/platforms/
+*/TinderBox Volunteer/.idea/
+*/TinderBox Volunteer/fonts/

@@ -6,9 +6,17 @@
     float: right;
 }
 
+#page_menu{
+    background: url("../img/index_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #page_menu_header{
     width: 100vw;
     height: 20vh;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #app_logo{
@@ -26,13 +34,14 @@
     padding: 0px      !important;
 }
 
-.menu_button{
+.menu_button, .menu_button_inner{
+    color: #fff9f4 !important;
     width: 50vw                 !important;
     height: 20vh                !important;
-    background-color: #0088bb   !important;
+    background-color: rgba(4,53,64,0.8)   !important;
     padding: 0px      !important;
     margin: 0px 0px 0px 0px !important;
-
+    vertical-align: middle !important;
 
     /* top, right, bottom, left */
     border-width: 1vh 1vw 1vh 1vw !important;
@@ -40,4 +49,18 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.menu_button_inner{
+    border-top: 0vh !important;
+}
+
+.menu_button span{
+    position: relative;
+    top: 2vh;
+}
+
+.menu_button p{
+    font-size: 1.2em;
+    bottom: 2vh;
 }
