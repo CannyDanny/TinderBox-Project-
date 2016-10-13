@@ -32,12 +32,12 @@ body {
     border-radius: 0px; !important;
 }
 .header {
-    height: 15vh;
-    background-color: transparent; !important;
-    margin: 0 auto;
-    text-align: center;
-    color: #fff9f4;
-    background-color: #043540;
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
 }
 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
     background-color: #043540; !important;
