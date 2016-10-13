@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 i {
-    color: white;
+    color: #fff9f4;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,11 +30,12 @@ i {
     width: 76vw;
     height: 9vh;
     background-color: #043540;
+    text-align: center;
 }
 .headline-box h1 {
     font-size: 2em;
-    color: white;
-    position: absolute;
+    color: #fff9f4;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,27 +46,28 @@ i {
 }
 .contact-info-panel {
     vertical-align: middle !important;
-    width: 96vw;
-    /*height: 20vh;*/
-    overflow: auto;
+    width: 80vw;
+    height: 20vh;
     margin: 1vh auto 0 auto;
+    padding: 0 8vw 0 8vw;
     background-color: rgba(4,53,64,0.9);
 }
 .contact-info-panel img {
     float: left;
     position: relative;
-    width: 25%;
+    width: 30%;
+    top: 50%;
+    transform: translate(50%, -50%);
 }
 
 .contact-info-panel p {
     float: right;
-    text-align: right;
     height: inherit;
     vertical-align: middle;
-    padding: 2vw;
-    display: block;
+    padding: 1vh 2vw 0 2vw;
+    display: inline-block;
     font-size: 0.8em;
-    color: white;
+    color: #fff9f4;
 }
 
 .contact-info-panel p span{
@@ -77,14 +79,14 @@ i {
     flex-wrap: nowrap;
 }
 #mail-title {
-    color: ;
+    color: #fff9f4;
     width: 100%;
     position: relative;
     background-color: rgba(4,53,64,0.9);
 }
 #mail-box button {
     background-color: rgba(4,53,64,0.9);
-    color: white;
+    color: #fff9f4;
     border: none;
     border-radius: 0 0 0;
     height: 4vh;
@@ -92,4 +94,12 @@ i {
 }
 #mail-box button:focus {
     background-color: rgba(241,136,121,1);
+}
+#container {
+    width: 96vw;
+    height: 53vh;
+}
+#content {
+    width: 50vw;
+    height: auto;
 }

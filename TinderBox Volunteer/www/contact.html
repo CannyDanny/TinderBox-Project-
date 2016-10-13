@@ -10,8 +10,10 @@
 
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova.js"> </script>
+    <script type="text/javascript" src="js/hidestatus.js"> </script>
     <script type="text/javascript" src="js/mypage.js"></script>
+    <script type="text/javascript" src="js/contact_content.js"></script>
 </head>
 <body>
 <div data-role="page" id="contact-page">
@@ -39,15 +41,14 @@
             <button>Call supervisor</button>
         <p id="mail-title">Your messages</p>
         <div id="mail-box">
-            <button id="inbox-btn">Inbox</button>
-            <button id="new-btn">New +</button>
-            <button id="sent-btn">Sent</button>
+            <button id="inbox-btn" onclick="changeContent(1)">Inbox</button>
+            <button id="new-btn" onclick="changeContent(2)">New +</button>
+            <button id="sent-btn" onclick="changeContent(3)">Sent</button>
         </div>
-        <div>
-            mails here
+        <div id="container">
+            <img id="content" src="img/img1.jpg" alt="ds">
         </div>
     </div><!-- /content -->
-
     <div data-role="footer">
         <h4>Page Footer</h4>
     </div><!-- /footer -->
