@@ -61,6 +61,11 @@
 }
 
 .menu_button p{
-    font-size: 1.2em;
-    bottom: 2vh;
+    position: relative;
+    font-size: 0.9em;
+    bottom: -3vh;
+}
+
+.info{
+    font-size: 0.8em !important;
 }
