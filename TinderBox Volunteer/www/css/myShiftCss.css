@@ -1,0 +1,118 @@
+body {
+    width: 750px;
+    height: 1334px;
+}
+#page_shift {
+    text-align: center;
+    background-image: url("../img/shift_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#myShift_title {
+    text-align: center;
+    color: #fff9f4;
+    line-height: 90px;
+    padding: 23px 195px 23px 195px;
+    background-color: #043540;
+    font-size: 2.4em;
+    //display: inline-block
+}
+#backBtn {
+    font-size: 17px;
+    //display: inline-block;
+    float: left;
+    color: #fff9f4;
+    padding: 25px 25px 25px 25px;
+    background-color: #043540;
+}
+#calendarBtn {
+    font-size: 17px;
+    //display: inline-block;
+    float: right;
+    color: #fff9f4;
+    padding: 25px 25px 25px 25px;
+    background-color: #043540;
+    border-radius: 0px; !important;
+}
+.header {
+    width: 750px;
+    height: 90px;
+    background-color: transparent; !important;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+    border-color: #043540; !important;
+}
+.ui-btn-left, .ui-btn-right {
+    margin: 0px;!important;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: transparent; !important;
+    border-color: transparent; !important;
+}
+
+#insideContent {
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+#insideContent2 {
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+#insideContent3 {
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.buttonsCollaps {
+    color: #fff9f4;
+    width: 720px;
+    height: 60px;
+}
+#showMap {
+    background-color: #8bc7b9;
+    color: #fff9f4;
+    width: 345px;
+    display: inline;
+}
+#switchShift {
+    background-color: #f18879;
+    color: #fff9f4;
+    width: 345px;
+    display: inline;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    border-color: transparent; !important;
+    color: #fff9f4; !important;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color: #043540; !important;
+}
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    border-left-width: 0px; !important;
+    border-right-width: 0px; !important;
+}
+
+.ui-listview > .ui-li-static, .ui-listview > .ui-li-divider, .ui-listview > li > a.ui-btn {
+    border-width: 0px 0 0 0; !important;
+    border-style: none; !important;
+    color: #fff9f4;
+}
+#splitUp {
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+    background-color: transparent; /*{global-icon-color}*/;
+    background-color: rgba(0,0,0,0) /*{global-icon-disc}*/;
+}
