@@ -27,8 +27,6 @@ body {
 #calendarBtn {
     //display: inline-block;
     float: right;
-
-
     border-radius: 0px; !important;
 }
 .header {

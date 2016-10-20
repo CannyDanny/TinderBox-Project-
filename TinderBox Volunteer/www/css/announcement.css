@@ -4,8 +4,45 @@ body {
 }
 #page_announcement {
     text-align: center;
-    background-image: url("../img/shift_bg.jpg");
+    background-image: url("../img/announcement_bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.header {
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+}
+#backBtn {
+    display: inline-block;
+    float: left;
+    color: #fff9f4;
+    background-color: #043540;
+}
+#announcement_title {
+    text-align: center;
+    color: #fff9f4;
+
+    margin: 1vw auto 0 auto;
+    padding: 2.30vh 2.4vw 2.30vh 2.4vw;
+    vertical-align: middle;
+    background-color: #043540;
+    font-size: 1.6em;
+    display: inline-block
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+    border-color: #043540; !important;
+}
+.ui-btn-left, .ui-btn-right {
+    margin: 0px;!important;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: transparent; !important;
+    border-color: transparent; !important;
 }
