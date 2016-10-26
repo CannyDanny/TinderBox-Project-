@@ -9,33 +9,47 @@ body {
     background-position: center;
     background-size: cover;
 }
-#myShift_title {
-    text-align: center;
+i {
     color: #fff9f4;
-    line-height: 8vh;
-    vertical-align: middle;
-    background-color: #043540;
-    font-size: 1.6em;
-    //display: inline-block
-}
-#backBtn {
-    //display: inline-block;
-    float: left;
-    color: #fff9f4;
-    background-color: #043540;
-}
-#calendarBtn {
-    //display: inline-block;
-    float: right;
-    border-radius: 0px; !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .header {
+    opacity: 0.9; !important;
     width: 96vw;
     margin: 1vh auto 0 auto;
     display: flex;
     justify-content: space-between;
     background: none;
     border: none;
+}
+.back-btn {
+    width: 18vw;
+    height: 9vh;
+    background-color: #043540;
+    position: relative;
+}
+.calendar-btn {
+    width: 18vw;
+    height: 9vh;
+    background-color: #043540;
+    position: relative;
+}
+.headline-box {
+    width: 58vw;
+    height: 9vh;
+    background-color: #043540;
+    text-align: center;
+}
+.headline-box h1 {
+    font-size: 1.5em;
+    color: #fff9f4;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
     background-color: #043540; !important;
@@ -51,7 +65,8 @@ body {
 }
 
 #insideContent {
-    width: 80vw;
+    opacity: 0.9; !important;
+    width: 96vw;
     margin: auto;
     text-align: center;
 }
@@ -90,34 +105,59 @@ body {
     text-align: center;
 }
 #insideContent2 {
-    width: 80vw;
+    opacity: 0.9; !important;
+    width: 96vw;
     margin: auto;
     text-align: center;
 }
 #insideContent3 {
-    width: 80vw;
+    opacity: 0.9; !important;
+    width: 96vw;
     margin: auto;
     text-align: center;
 }
 
 .buttonsCollaps {
+    opacity: 0.9; !important;
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
     color: #fff9f4;
-    width: 80vw;
-    height: 14vh;
 }
-#showMap {
+.show-map-btn {
+    margin-top: -1.75em;
+    width: 96vw;
+    height: 5vh;
+    line-height: 5vh;
     background-color: #8bc7b9;
-    color: #fff9f4;
-    width: 36vw;
-    display: inline;
-    font-size: 0.6em;
+    position: relative;
+    font-size: 1em;
+    text-align: center !important;
 }
-#switchShift {
+.show-map-btn a {
+    text-align: center;
+    text-decoration: none !important;
+    color: #fff9f4 !important;
+    background-color: #8bc7b9 !important;
+}
+.switch-shift-btn {
+    margin-top: -1.75em;
+    width: 96vw;
+    height: 5vh;
+    line-height: 5vh;
     background-color: #f18879;
-    color: #fff9f4;
-    width: 36vw;
-    display: inline;
-    font-size: 0.6em;
+    position: relative;
+    font-size: 1em;
+    text-align: center !important;
+}
+.switch-shift-btn a {
+    text-align: center;
+    text-decoration: none !important;
+    color: #fff9f4 !important;
+    background-color: #f18879 !important;
 }
 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
     border-color: transparent; !important;
@@ -157,4 +197,9 @@ body {
 .content_arrange3 {
     font-size: 0.7em;
     display: inline;
+}
+.ui-collapsible-themed-content .ui-collapsible-content {
+    border-bottom-width: 0 !important;
+    border-style: none !important;
+    opacity: 0.9; !important;
 }
