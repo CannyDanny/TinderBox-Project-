@@ -30,7 +30,7 @@
     width: 76vw;
     height: 9vh;
     background-color: #043540;
-    text-align: center;
+    text-align: center !important;
 }
 .headline-box h1 {
     font-size: 2em;
