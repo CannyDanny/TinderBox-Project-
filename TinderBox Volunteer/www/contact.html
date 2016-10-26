@@ -20,7 +20,7 @@
 
     <div data-role="header" id="header">
         <div class="back-btn">
-            <a href="index.html"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+            <a href="index.html"><i class="fa fa-chevron-left fa-2x back-icon" aria-hidden="true"></i></a>
         </div>
         <div class="headline-box">
             <h1>Contact</h1>
@@ -29,7 +29,7 @@
 
     <div role="main" class="main_content ui-content">
         <div class="contact-info-panel">
-                <img src="css/images/background-imgs/profile_icon.png" alt="profile-pic">
+                <img class="portrait" src="css/images/background-imgs/profile_icon.png" alt="profile-pic">
                 <p>
                     <span>Bo Jensen</span>
                     <span>Supervisor</span>
@@ -38,7 +38,7 @@
                     <span>bojensen@tinderbox.dk</span>
                 </p>
         </div>
-            <button>Call supervisor</button>
+        <button class="call_btn">Call supervisor</button>
         <p id="mail-title">Your messages</p>
         <div id="mail-box">
             <button id="inbox-btn" onclick="changeContent(1)">Inbox</button>
@@ -46,12 +46,47 @@
             <button id="sent-btn" onclick="changeContent(3)">Sent</button>
         </div>
         <div id="container">
-            <img id="content" src="img/img1.jpg" alt="ds">
+            <form id="content" action="" method="post">
+                <div class="info-list">
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    <label>
+                        <p><span>Bo Jensen</span><span>13:25 12-10-2015</span></p>
+                        <p>Hello, here is the info text.</p>
+                    </label>
+                    <div>
+                        <i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    <label>
+                        <p><span>Bo Jensen</span><span>13:25 12-10-2015</span></p>
+                        <p>Hello, here is the info text.</p>
+                    </label>
+                    <div>
+                        <i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    <label>
+                        <p><span>Bo Jensen</span><span>13:25 12-10-2015</span></p>
+                        <p>Hello, here is the info text.</p>
+                    </label>
+                    <div>
+                        <i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </form>
         </div>
     </div><!-- /content -->
-    <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
+
 </div><!-- /page -->
 </body>
 </html>
