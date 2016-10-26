@@ -1,0 +1,59 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#page_information {
+    background-image: url("../img/information_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+}
+p {
+    font-size: 10px !important;
+    white-space: initial;
+}
+.header {
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+}
+#backbutton{
+    display: inline-block;
+    float: left;
+    color: #fff9f4;
+    background-color: #043540 !important;
+    opacity: 1; !important;
+}
+#information_title {
+    text-align: center;
+    color: #fff9f4;
+    margin: 1vw 1vw 0 auto;
+    padding: 2.30vh 10.4vw 2.30vh 10.4vw;
+    vertical-align: middle;
+    background-color: #043540;
+    font-size: 1.6em;
+    display: inline-block
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+    border-color: #043540; !important;
+    opacity: 0.9;
+    margin: 1vw 3vw 1vw 3vw;
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto 3vw auto 3vw;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a{
+    background-color: #043540 !important;
+    opacity: 0.9;
+}
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #043540 !important;
+}
