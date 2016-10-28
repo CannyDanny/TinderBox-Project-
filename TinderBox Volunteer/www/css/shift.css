@@ -165,3 +165,18 @@ i {
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
 background-color: transparent !important;
 }
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #043540 !important;
+    border: none;
+}
+.inside-content {
+    margin: auto !important;
+}
+.ui-corner-all {
+    border-radius: initial !important;
+}
+
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    color: #fff9f4 !important;
+}
