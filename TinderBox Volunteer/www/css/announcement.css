@@ -1,6 +1,5 @@
 body {
     width: 100vw;
-    height: 100vh;
 }
 #page_announcement {
     text-align: center;
@@ -114,6 +113,27 @@ i {
     background-color:  #043540; !important;
     margin: -1em 0em auto !important;
 }
+#content4 {
+    width: 96vw !important;
+}
+
+#content4 .ui-btn {
+    margin: 1em auto !important;
+    padding: 2em 1em !important;
+    border-width: 0 !important;
+    border-style: none !important;
+}
+
+#content4 .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover {
+    background-color: #043540; !important;
+}
+#content4 .ui-collapsible {
+    margin: 0 auto !important;
+}
+#content4 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color:  #043540; !important;
+    margin: -1em 0em auto !important;
+}
 .ui-collapsible-themed-content .ui-collapsible-content {
     border-bottom-width: 0 !important;
     border-style: none !important;
@@ -139,8 +159,9 @@ i {
     background-color: transparent !important;
 }
 .right-autor {
-    margin-top: -0.4em;
+    margin-top: -0.5em;
     display: inline;
     font-size: 0.8em;
     float: right;
+    font-style: italic;
 }
