@@ -172,6 +172,8 @@ background-color: transparent !important;
 }
 .inside-content {
     margin: auto !important;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .ui-corner-all {
     border-radius: initial !important;
