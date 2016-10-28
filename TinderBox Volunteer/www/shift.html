@@ -2,41 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <title>My Shift</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"  media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/myShiftCss.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/shift.css"  media="all"/>
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css"  media="all"/>
 
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    <script type="text/javascript" src="cordova.js"> </script>
-    <script type="text/javascript" src="js/jsMyShift.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/shift.js"></script>
 </head>
 <body>
 <div id="page_shift" data-role="page">
     <div class="header" data-role="header">
-        <a href="#"><i id="backBtn" class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
-        <div id="myShift_title">My Shift</div>
-        <a href="#"><i id="calendarBtn" class="fa fa-calendar fa-3x" aria-hidden="true"></i></a>
+        <div class="back-btn">
+            <a href="index.html"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="headline-box">
+            <h1>My Shift</h1>
+        </div>
+        <div class="calendar-btn">
+            <a href="index.html"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></a>
+        </div>
     </div><!-- /header -->
     <div id="insideContent" role="main" class="ui-content">
         <div class="invitation" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="bottom">
-            <h5><div id="splitUp"><p class="content_arrange">14</p><p class="content_arrange2">Oct</p><br> Thursday <br> <br><p class="content_arrange3">Lead by Bo Jensen <br>At district 13 <br>Time: 10:00 - 16:00<p></div></h5>
+            <h5><div id="">15 Oct<br> Friday <br> <br>Lead by Bo Jensen <br>At district 11 <br>Time: 10:00 - 16:00</div></h5>
                 <ul data-role="listview" data-inset="false">
-                <div class="buttonsCollaps">
-                    <button id="showMap" class="ui-btn ui-btn-inline">Show on map</button><button id="switchShift" class="ui-btn ui-btn-inline">Switch this shift</button>
+            <div class="buttonsCollaps">
+                <div class="show-map-btn">
+                    <a href="#">Show on map</a>
                 </div>
+                <div class="switch-shift-btn">
+                    <a href="#">Switch this shift</a>
+                </div>
+            </div>
                     <li>Lorem ipsum dolor sit amet, arcu consectetuer vel ligula tortor. Ac sit dolor integer et mollis praesent. <br></li>
                 </ul>
         </div>
     </div><!-- /content -->
     <div id="insideContent2" role="main" class="ui-content">
         <div class="invitation2" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="bottom">
-            <h5><div id="splitUp"><p class="content_arrange">15</p><p class="content_arrange2">Oct</p><br> Friday <br> <br><p class="content_arrange3">Lead by Bo Jensen <br>At district 11 <br>Time: 10:00 - 16:00<p></div></h5>
+            <h5><div id="">15 Oct<br> Friday <br> <br>Lead by Bo Jensen <br>At district 11 <br>Time: 10:00 - 16:00</div></h5>
                 <ul data-role="listview" data-inset="false">
             <div class="buttonsCollaps">
-                <button id="showMap" class="ui-btn ui-btn-inline">Show on map</button><button id="switchShift" class="ui-btn ui-btn-inline">Switch this shift</button>
+                <div class="show-map-btn">
+                    <a href="#">Show on map</a>
+                </div>
+                <div class="switch-shift-btn">
+                    <a href="#">Switch this shift</a>
+                </div>
             </div>
                     <li>Lorem ipsum dolor sit amet, arcu consectetuer vel ligula tortor. Ac sit dolor integer et mollis praesent. <br></li>
                 </ul>
@@ -44,12 +60,20 @@
     </div><!-- /content -->
     <div id="insideContent3" role="main" class="ui-content">
         <div class="invitation3" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="bottom">
-            <h5><div id="splitUp"><p class="content_arrange">16</p><p class="content_arrange2">Oct</p><br> Saturday <br> <br><p class="content_arrange3">Lead by Bo Jensen <br>At district 16 <br>Time: 10:00 - 16:00<p></div></h5>
+            <<h5><div id="">15 Oct<br> Friday <br> <br>Lead by Bo Jensen <br>At district 11 <br>Time: 10:00 - 16:00</div></h5>
                 <ul data-role="listview" data-inset="false">
             <div class="buttonsCollaps">
-                <button id="showMap" class="ui-btn ui-btn-inline">Show on map</button><button id="switchShift" class="ui-btn ui-btn-inline">Switch this shift</button>
+                <div class="show-map-btn">
+                    <a href="#">Show on map</a>
+                </div>
+                <div class="switch-shift-btn">
+                    <a href="#">Switch this shift</a>
+                </div>
             </div>
                     <li>Lorem ipsum dolor sit amet, arcu consectetuer vel ligula tortor. Ac sit dolor integer et mollis praesent. <br></li>
                 </ul>
         </div>
     </div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

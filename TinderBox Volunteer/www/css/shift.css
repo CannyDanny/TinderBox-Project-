@@ -1,0 +1,167 @@
+body {
+    width: 100vw;
+}
+#page_shift {
+    text-align: center;
+    background-image: url("../img/shift_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+i {
+    color: #fff9f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    opacity: 0.9; !important;
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+}
+.back-btn {
+    width: 18vw;
+    height: 9vh;
+    background-color: #043540;
+    position: relative;
+}
+.calendar-btn {
+    width: 18vw;
+    height: 9vh;
+    background-color: #043540;
+    position: relative;
+}
+.headline-box {
+    width: 58vw;
+    height: 9vh;
+    background-color: #043540;
+    text-align: center;
+}
+.headline-box h1 {
+    font-size: 1.5em;
+    color: #fff9f4;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#insideContent {
+    opacity: 0.9; !important;
+    width: 96vw !important;
+}
+.invitation a{
+    background-color:#043540 !important;
+}
+.invitation .ui-collapsible-content {
+    background-color: #095b6e !important;
+}
+.invitation .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
+    background-color: #095b6e !important;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+#insideContent2 {
+    opacity: 0.9; !important;
+    width: 96vw !important;
+}
+.invitation2 a {
+    background-color:#ffc922 !important;
+
+}
+.invitation2 .ui-collapsible-content {
+    background-color: #095b6e !important;
+}
+.invitation2 .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
+    background-color: #095b6e !important;
+    font-size: 0.7em;
+    text-align: center;
+}
+#insideContent3 {
+    opacity: 0.9; !important;
+    width: 96vw !important;
+}
+.invitation3 a{
+    background-color: #f56b71 !important;
+}
+.invitation3 .ui-collapsible-content {
+    background-color: #095b6e !important;
+}
+.invitation3 .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
+    background-color: #095b6e !important;
+    font-size: 0.7em;
+    text-align: center;
+}
+.buttonsCollaps {
+    opacity: 0.9; !important;
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    color: #fff9f4;
+}
+.show-map-btn {
+    margin-top: -1.75em;
+    width: 96vw;
+    height: 4.5vh;
+    line-height: 4.5vh;
+    background-color: #8bc7b9;
+    position: relative;
+    font-size: 1em;
+    text-align: center !important;
+}
+.show-map-btn a {
+    text-align: center;
+    text-decoration: none !important;
+    color: #fff9f4 !important;
+    background-color: #8bc7b9 !important;
+}
+.switch-shift-btn {
+    margin-top: -1.75em;
+    width: 96vw;
+    height: 4.5vh;
+    line-height: 4.5vh;
+    background-color: #f18879;
+    position: relative;
+    font-size: 1em;
+    text-align: center !important;
+}
+.switch-shift-btn a {
+    text-align: center;
+    text-decoration: none !important;
+    color: #fff9f4 !important;
+    background-color: #f18879 !important;
+}
+
+.ui-collapsible-themed-content .ui-collapsible-content {
+    border-bottom-width: 0 !important;
+    border-style: none !important;
+    opacity: 0.9; !important;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+    border-color: #043540; !important;
+    opacity: 0.9; !important;
+}
+.ui-btn-left, .ui-btn-right {
+    margin: 0;!important;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: transparent; !important;
+    border-color: transparent; !important;
+}
+.ui-collapsible {
+    margin: 0 auto; !important;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+background-color: transparent !important;
+}
