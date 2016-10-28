@@ -51,7 +51,6 @@ i {
     transform: translate(-50%, -50%);
 }
 #insideContent {
-    text-algin: center;
     opacity: 0.9; !important;
     width: 96vw !important;
 }
@@ -68,7 +67,6 @@ i {
 }
 
 #insideContent2 {
-    text-algin: center;
     opacity: 0.9; !important;
     width: 96vw !important;
 }
@@ -85,7 +83,6 @@ i {
     text-align: center;
 }
 #insideContent3 {
-    text-algin: center;
     opacity: 0.9; !important;
     width: 96vw !important;
 }
@@ -154,7 +151,7 @@ i {
     opacity: 0.9; !important;
 }
 .ui-btn-left, .ui-btn-right {
-    margin: 0px;!important;
+    margin: 0;!important;
 }
 
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
