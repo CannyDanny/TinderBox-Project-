@@ -37,10 +37,10 @@ i {
     text-align: center;
 }
 .headline-box h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     color: #fff9f4;
     position: relative;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -81,24 +81,24 @@ i {
     border: none;
     color: #fff9f4;
 }
-.show-map-btn {
-    margin-top: -1.75em;
+.my-shift {
+    margin-top: -1.68em;
     width: 96vw;
     height: 4.5vh;
     line-height: 4.5vh;
-    background-color: #8bc7b9;
+    background-color: #ffd962;
     position: relative;
     font-size: 1em;
     text-align: center !important;
 }
-.show-map-btn a {
+.my-shift a {
     text-align: center;
     text-decoration: none !important;
     color: #fff9f4 !important;
-    background-color: #8bc7b9 !important;
+    background-color: #ffd962 !important;
 }
-.switch-shift-btn {
-    margin-top: -1.75em;
+.send-request {
+    margin-top: -1.68em;
     width: 96vw;
     height: 4.5vh;
     line-height: 4.5vh;
@@ -107,13 +107,18 @@ i {
     font-size: 1em;
     text-align: center !important;
 }
-.switch-shift-btn a {
+.send-request a {
     text-align: center;
     text-decoration: none !important;
     color: #fff9f4 !important;
     background-color: #f18879 !important;
 }
-
+.font-size-collapsible p {
+    font-size: 0.6em;
+}
+.ui-collapsible-content {
+    padding: 0 !important;
+}
 .ui-collapsible-themed-content .ui-collapsible-content {
     border-bottom-width: 0 !important;
     border-style: none !important;
@@ -141,4 +146,9 @@ i {
 
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
     background-color: transparent !important;
+}
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #043540 !important;
+    border: none;
 }
