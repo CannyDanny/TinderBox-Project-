@@ -1,12 +1,18 @@
 body {
     width: 100vw;
-}
-#page_shift {
     text-align: center;
+    background-color: rgba(0,0,0,0) !important;
     background-image: url("../img/shift_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size:100% 101%; /* 101% on height because the picture didn't fill the screen */
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
 }
 i {
     color: #fff9f4;

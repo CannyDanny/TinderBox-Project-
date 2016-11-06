@@ -1,12 +1,20 @@
 body {
     width: 100vw;
-    height: 100vh;
-}
-#page_information {
+    text-align: center;
     background-image: url("../img/information_bg.jpg");
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 101%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+#page_information {
     text-align: left;
 }
 p {
@@ -48,6 +56,7 @@ i {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
     background-color: #043540; !important;
     border-color: #043540; !important;
