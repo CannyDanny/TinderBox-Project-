@@ -1,0 +1,82 @@
+body {
+    width: 100vw;
+    text-align: center;
+    background-image: url("../img/information_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 101%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+#page_information {
+    text-align: left;
+}
+p {
+    font-size: 10px !important;
+    white-space: initial;
+}
+i {
+    color: #fff9f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#header {
+    width: 96vw !important;
+    margin: 1vh auto 0 auto !important;
+    display: flex !important;
+    justify-content: space-between;
+    background: none;
+    border: none;
+}
+.back-btn {
+    width: 18vw;
+    height: 9vh;
+    background-color: #043540;
+    position: relative;
+}
+.headline-box {
+    width: 76vw;
+    height: 9vh;
+    background-color: #043540;
+    text-align: center;
+}
+.headline-box h1 {
+    font-size: 1.6em;
+    color: #fff9f4;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+    border-color: #043540; !important;
+    opacity: 0.9;
+    margin: 1vw 3vw 1vw 3vw;
+    border: none;
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto 3vw auto 3vw;
+    border: none;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a{
+    background-color: #043540 !important;
+    opacity: 0.9;
+    border: none;
+}
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #043540 !important;
+    border: none;
+}

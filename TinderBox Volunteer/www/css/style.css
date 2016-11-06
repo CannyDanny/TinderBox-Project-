@@ -1,67 +1,18 @@
-body {
-    width: 750px;
-    height: 1334px;
+@font-face {
+    font-family: EvelethThin;
+    src: url(../fonts/EvelethCleanThin.otf);
 }
-#page_shift {
-    text-align: center;
-    background-image: url("../img/shift_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#myShift_title {
-    color: #fff;
-    padding: 40px 200px 40px 200px;
-    background-color: #043540;
-    font-size: 2.3em;
-    //display: inline-block
-}
-#backBtn {
-    //display: inline-block;
-    float: left;
-    color: #fff;
-    padding: 25px 25px 25px 25px;
-    background-color: #043540;
-}
-#calendarBtn {
-    //display: inline-block;
-    float: right;
-    color: #fff;
-    padding: 25px 25px 25px 25px;
-    background-color: #043540;
-    border-radius: 0px; !important;
-}
-.header {
-    width: 750px;
-    height: 90px;
-    background-color: transparent; !important;
-    margin: 0 auto;
-    text-align: center;
+html, body, div{
+    font-family: EvelethThin !Important;
+    color: #fff9f4 !important;
 }
 
-.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
-    background-color: #043540; !important;
-    border-color: #043540; !important;
-    color:
-}
-.callaps {
-    width: 725;
-    text-align: center;
-}
-.ui-btn-left, .ui-btn-right {
-    margin: 0px;!important;
+body, input, select, textarea, button, .ui-btn {
+    font-family: EvelethThin !Important;
+    color: #fff9f4 !important;
 }
 
-.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-    background-color: transparent; !important;
-    border-color: transparent; !important;
-}
-.buttonsCollaps {
-    width: 100%;
-    height: 40px;
-}
-#showMap {
-
-}
-#switchShift {
-
+.ui-btn-up-a,.ui-btn-hover-a,.ui-btn-down-a,.ui-bar-a,.ui-body-a,.ui-btn-up-a,.ui-btn-hover-a,.ui-btn-down-a,.ui-body-a input,.ui-body-a select,.ui-body-a textarea,.ui-body-a{
+    font-family: EvelethThin !Important;
+    color: #fff9f4 !important;
 }
