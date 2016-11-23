@@ -119,6 +119,10 @@ i {
     color: #fff9f4 !important;
     background-color: #f18879 !important;
 }
+.font-size-collapsible {
+    padding-left: 7vw;
+    text-align: left;
+}
 .font-size-collapsible p {
     font-size: 0.6em;
 }
