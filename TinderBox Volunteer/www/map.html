@@ -5,18 +5,32 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"  media="all"/>
     <link rel="stylesheet" type="text/css" href="css/map.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css"  media="all"/>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/hidestatus.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
 </head>
 <body>
 
-
 <div data-role="page" id="pageone">
-    <div data-role="panel" id="myPanel" data-position="right">
+    <div data-role="header" class="header">
+        <div class="back-btn">
+            <a href="main_menu.html"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="headline-box">
+            <h1>MAP</h1>
+        </div>
+        <div class="find">
+            <a href="#myPanel">Find<i class="fa fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+    <div data-role="panel" id="myPanel" data-position="right" data-display="overlay">
         <form>
             <div class="ui-field-contain">
                     <label for="select-native-1"></label>
@@ -40,12 +54,6 @@
         </fieldset>
         <input type="submit" name="Submit" id="submit_area" value="Submit" data-rel="close">
     </div>
-    <div data-role="header">
-        <h1>Map</h1>
-        <a href="#" class="left_button ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left"></a>
-        <a href="#myPanel" class="find_button ui-btn ui-btn-inline ui-corner-all">Find</a>
-    </div>
-    <div data-role="main" class="ui-content">
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2266.685974260702!2d10.343102315916182!3d55.3809362804556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdfb978b5071d%3A0x44900fe9cdb03650!2sTinderbox+Odense!5e0!3m2!1ssk!2sdk!4v1476276360774" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
