@@ -1,3 +1,6 @@
+/**
+    Created by zongy on 13-10-2016.
+**/
 * { padding: 0; margin: 0; }
 #contact-page {
 
@@ -52,14 +55,14 @@
     padding: 2vh 8vw !important;
     background-color: rgba(4,53,64,0.9);
 }
-.contact-info-panel .portrait {
+#supervisor .portrait {
     float: left !important;
     width: 30%;
     margin-top:2vh !IMPORTANT;
     vertical-align: middle !important;
 }
 
-.contact-info-panel p {
+#supervisor p {
     vertical-align: middle !important;
     float: right !important;
     height: inherit !important;
@@ -67,7 +70,7 @@
     color: #fff9f4;
 }
 
-.contact-info-panel p span{
+#supervisor p span{
     display: block;
 }
 .call_btn {
@@ -109,46 +112,49 @@
     padding: 2vh 0 10vh 0 !important;
     margin: 0 !important;
 }
-li {
-    list-style: none;
+#content ul {
+    list-style: none !important;
 }
-.info-list {
+#content ul li {
+    padding: 2vh 0 !important;
+    width: 100% !important;
+    list-style: none !important;
+    border-bottom: 1px solid #fff !important;
     display: flex !important;
     justify-content: space-between !important;
-    border-bottom: 1px solid #fff;
 }
-.info-list div {
-    height: 5vh;
-    margin: 0 !important;
-    padding: 2vh 0 !important;
-}
-.info-list div input[type=checkbox] {
+#content input[type=checkbox] {
     width: 6vw !important;
     height: 6vh !important;
-    display: flex !important;
-    vertical-align: middle !important;
     padding: 0 0 0 2vw !important;
     margin-left: 4vw !important;
-    top: 0 !important;
-    left: 0 !important;
     line-height: 7vh !important;
 }
-.info-list div input[type=checkbox]:before {
+#content input[type=checkbox]:before {
     border: 1px solid #fff !important;
     background: #043540 !important;
 }
-.info-list div input[type=checkbox]:checked {
+#content input[type=checkbox]:checked {
     background: #B0B0B0 !important;
 }
-.info-list label {
+#messages {
+    width: 70vw;
     margin: 0 !important;
-    padding: 2vh 0 !important;
+    padding: 0 !important;
     vertical-align: middle !important;
+    height: auto !important;
 }
-.info-list label > p {
+.msg_title {
+    font-size: 0.8em;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+#messages > p {
+    font-size: 0.9em !important;
     text-align: start !important;
 }
-.info-list > div .burger-menu {
+.burger-menu {
+    width: 6vw !important;
     vertical-align: middle !important;
     padding-right: 4vw !important;
 }
