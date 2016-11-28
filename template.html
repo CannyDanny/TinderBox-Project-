@@ -5,6 +5,12 @@
 <script type="text/javascript">
 $('document').ready(function() {
    $.ajax({
+      xhrFields: {
+        withCredentials: true
+      },
+      headers: {
+        'Authorization': 'Basic ' + btoa('test:test')
+      },
       url: 'http://localhost/yii_api/api/web/v1/announcements',
       data: {
          format: 'json'
