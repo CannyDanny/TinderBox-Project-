@@ -1,13 +1,120 @@
-.ui-header{
-    background-color:#043540!important;
+body {
+    width: 100vw;
+    text-align: center;
+    background-image: url("../img/faq_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 101%; /* 101% on height because the picture didn't fill the screen */
 }
-.ui-title {
-    color:#fff9f4!important;
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+i {
+    color: #fff9f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    opacity: 0.9; !important;
+    width: 96vw;
+    margin: 1vh auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+}
+.back-btn {
+    width: 18vw;
+    height: 9vh;
+    background-color: #043540;
+    position: relative;
+}
+.headline-box {
+    width: 76vw;
+    height: 9vh;
+    background-color: #043540;
+    text-align: center;
+}
+.headline-box h1 {
+    font-size: 1.5em;
+    color: #fff9f4;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content {
+    width: 96vw !important;
+}
+.content .ui-btn {
+    margin: 1em auto !important;
+    padding: 2em 1em !important;
+    border-width: 0 !important;
+    border-style: none !important;
 }
 
-.left_button{
-    background-color:#043540!important;
-    height: 3vh!important;
-    width: 12vw!important;
-    border:none;
+.content .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover {
+    background-color: #043540; !important;
+}
+.content .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+}
+.inside-content {
+    margin: auto !important;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.content .ui-collapsible {
+    opacity: 0.9; !important;
+    margin: 0 auto !important;
+}
+.content .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color:  #043540; !important;
+    margin: -1em 0em auto !important;
+}
+.ui-collapsible-themed-content .ui-collapsible-content {
+    border-bottom-width: 0 !important;
+    border-style: none !important;
+    opacity: 0.9; !important;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #043540; !important;
+    border-color: #043540; !important;
+    opacity: 0.9; !important;
+}
+.ui-btn-left, .ui-btn-right {
+    margin: 0px;!important;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: transparent; !important;
+    border-color: transparent; !important;
+}
+.ui-collapsible {
+    margin: 0 auto; !important;
+}
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+    background-color: transparent !important;
+}
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #043540 !important;
+    border: none;
+}
+.ui-corner-all {
+    border-radius: initial !important;
+}
+
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    color: #fff9f4 !important;
+}
+.content p {
+    text-align: left !important;
+}
 
