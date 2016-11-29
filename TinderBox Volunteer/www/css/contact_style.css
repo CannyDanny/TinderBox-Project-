@@ -36,7 +36,7 @@
     text-align: center !important;
 }
 .headline-box h1 {
-    font-size: 2em;
+    font-size: 1.5em !important;
     color: #fff9f4;
     position: relative;
     top: 50%;
@@ -50,7 +50,7 @@
     padding: 0px !important;
 }
 .contact-info-panel {
-    height: 18vh;
+    min-height: 18vh !important;
     margin-top: 1vh !important;
     padding: 2vh 8vw !important;
     background-color: rgba(4,53,64,0.9);
@@ -63,11 +63,14 @@
 }
 
 #supervisor p {
+    width:65% !important;
+    margin-top: 1vh !important;
     vertical-align: middle !important;
     float: right !important;
     height: inherit !important;
-    font-size: 1em;
+    font-size: 0.7em !important;
     color: #fff9f4;
+    line-height: 1.7em;
 }
 
 #supervisor p span{
@@ -115,6 +118,9 @@
 #content ul {
     list-style: none !important;
 }
+.btn_line {
+    justify-content: flex-end !important;
+}
 #content ul li {
     padding: 2vh 0 !important;
     width: 100% !important;
@@ -145,13 +151,18 @@
     height: auto !important;
 }
 .msg_title {
-    font-size: 0.8em;
+    font-size: 0.7em !important;
     display: flex !important;
     justify-content: space-between !important;
-}
-#messages > p {
-    font-size: 0.9em !important;
+    width: 90% !important;
+    margin: 0 auto;
     text-align: start !important;
+}
+.msg_content {
+    width: 90% !important;
+    font-size: 0.6em !important;
+    margin: 1vh auto 0 auto;
+    line-height: 1.5em;
 }
 .burger-menu {
     width: 6vw !important;
@@ -165,4 +176,40 @@
 #content input[type=text] {
     width: 70vw;
     color: black !important;
+}
+.msgNew_to {
+}
+.msgNew_to > label, .msgNew_content > label{
+    font-size:0.6em !important;
+    margin: 0.8vh 0 0 6vw !important;
+}
+.msgNew_to input[type=text]{
+    font-size: 1em !important;
+    color: #043540 !important;
+    width: 64% !important;
+    padding: 1vh 0 !important;
+    margin: 0 6vw 0 0 !important;
+}
+.msgNew_content {
+
+}
+
+.msgNew_content textarea{
+    font-size: 1em !important;
+    color: #043540 !important;
+    width: 64% !important;
+    padding: 1vh 0 !important;
+    margin: 0 6vw 0 0 !important;
+}
+
+#newMsg_btn {
+    float: right !important;
+    margin-right: 6vw !important;
+    margin-left: 28vw !important;
+    width: 64% !important;
+    height: 5vh !important;
+    color: #fff !important;
+    padding-top: 1vh;
+    background-color: #cf867e !important;
+    border: none;
 }
