@@ -83,3 +83,21 @@ i {
 .ui-corner-all{
     border-radius: initial !important;
 }
+.content {
+    width: 96vw !important;
+}
+.content .ui-btn {
+    margin: 1em auto !important;
+    padding: 2em 1em !important;
+    border-width: 0 !important;
+    border-style: none !important;
+}
+.content .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color:  #043540; !important;
+    margin: -1em 0em auto !important;
+}
+.inside-content {
+    margin: auto !important;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
