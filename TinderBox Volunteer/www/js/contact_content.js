@@ -138,17 +138,16 @@ function postNew()
             'Content-Type': "application/json",
         },
         url: 'http://10.140.64.129/Tinderbox-Project-Backend/yii_api/api/web/v1/messages',
-        data: JSON.stringify(msgData),
+        data: msgData,
         error: function(jqXHR, textStatus, errorThrown) {
             $('#content_ul').html('<p>An error has occurred, check log! </p>');
             console.log(jqXHR+textStatus+errorThrown);
         },
         dataType: 'json',
         success: function() {
-            $("#content_ul").empty;
+            $("#content_ul").empty();
             var res = $("<p>").text("Successfully sent, check inbox!");
-            $("#content_ul")
-                .append(res);
+            $("#content_ul").append(res);
         },
         method: 'POST'
     });
@@ -161,12 +160,10 @@ function setMsg(){
     var mcontent = document.getElementById("msg_content").value;
     var msg =
         {
-            "firstname": "new",
-            "lastname": "test",
-            "date": "2016-11-29 12:02:37",
-            "content": "Hello World!",
-            "sender": 1,
-            "recipient": 2
+            "date": mdate,
+            "content": mcontent,
+            "sender": mfrom,
+            "recipient": mto
         };
     return msg;
 }
