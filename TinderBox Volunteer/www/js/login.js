@@ -1,6 +1,15 @@
 /**
  * Created by Senk on 10/12/2016.
  */
+
+// Redirect if user logged in already
+$('document').ready(function() {
+    var user = window.localStorage.getItem("security");
+    if((user !== null) && (user !== "")){
+        window.location = "main_menu.html";
+    }
+});
+
 var attempt = 20; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate(){
@@ -22,6 +31,36 @@ function validate(){
         }
     }
 }
+
+function ajax_validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    $.ajax({
+        xhrFields: {
+            withCredentials: true
+        },
+        headers: {
+            'Authorization': 'Basic ' + btoa(username+':'+password)
+        },
+        url: 'http://10.140.72.208/yii_api/api/web/v1/users',
+        data: {
+            format: 'json'
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Wrong credentials!');
+            console.log(jqXHR+textStatus+errorThrown);
+        },
+        dataType: 'json',
+        success: function(data) {
+            var temp = 'Basic ' + btoa(username+':'+password);
+            //window.localStorage.getItem("security");
+            window.localStorage.setItem("security", temp);
+            window.location = "main_menu.html"; // Redirecting to other page.
+        },
+        type: 'GET'
+    });
+}
+
 function myFunction() {
     alert("Doesnt function");
 }

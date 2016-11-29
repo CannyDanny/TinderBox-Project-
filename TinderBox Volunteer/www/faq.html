@@ -1,72 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>FAQ</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"  media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/faq.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/faq.css"  media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css"  media="all"/>
+
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/hidestatus.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <script type="text/javascript" src="js/faq.js"></script>
 </head>
 <body>
 
-<div data-role="page">
-
-    <div data-role="header">
-        <h1>FAQ</h1>
-        <a href="#" class=" left_button ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left"></a>
+<div id="page_faq" data-role="page">
+    <div class="header" data-role="header">
+        <div class="back-btn">
+            <a href="main_menu.html"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="headline-box">
+            <h1>FAQ</h1>
+        </div>
     </div><!-- /header -->
-
-    <div role="main" class="ui-content">
-        <div class="paragraph1" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-                <h4>How to get your free ticket ?</h4>
-                <ul data-role="listview" data-inset="false">
-                    <li>Read-only list item 1</li>
-                </ul>
-        </div>
-
-        <div class="paragraph2" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-                <h4>How will my shifts be organised ?</h4>
-                <ul data-role="listview" data-inset="false">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu vulputate tellus,
-            lobortis semper enim. Nunc a mauris a lorem auctor dignissim. Vestibulum vitae nibh ipsum.
-            Etiam vulputate auctor. Integer finibus porta sem id tempor. Sed at neque fringilla,
-            faucibus erat non, euismod erat. Ut vitae tortor feugiat, viverra diam eu, fermentum eros.
-            Phasellus pulvinar ex dolor, eget sollicitudin lectus consequat eget. Sed sagittis posuere lacus
-            in interdum orci sagittis a. Phasellus et diam semper, facilisis ligula et, facilisis eros.</p>
-                    
-                </ul>
-        </div>
-
-        <div class="paragraph3" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-                <h4>Can I swap an application between events?</h4>
-                <ul data-role="listview" data-inset="false">
-                    <li>Read-only list item 1</li>
-                    
-                </ul>
-        </div>
-
-        <div class="paragraph4" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-                <h4>Where do I camp during festival ?</h4>
-                <ul data-role="listview" data-inset="false">
-                    <li>Read-only list item 1</li>
-                 
-                </ul>
+    <div role="main" class="ui-content inside-content">
+        <div class="content" data-role="collapsible-set" id="set" data-expanded-icon="carat-u" data-iconpos="right">
+            <div data-role="collapsible" id="set1" data-collapsed="true" data-expanded-icon="carat-d">
+                <h3>How can I find supervisor?</h3>
+                <p>Check out the contact page.</p>
+            </div>
         </div>
     </div><!-- /content -->
 
 </div><!-- /page -->
-
-</body>
-</html>
 
 </body>
 </html>

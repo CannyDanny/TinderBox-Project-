@@ -6,12 +6,12 @@ $('document').ready(function() {
         headers: {
             'Authorization': 'Basic ' + btoa('test:test')
         },
-        url: 'http://10.140.102.233/yii_api/api/web/v1/informations',
+        url: 'http://10.140.72.137/yii_api/api/web/v1/faqs',
         data: {
             format: 'json'
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            $('#set').html('<p>An error has occurred, check log! </p>');
+            $('#faq-paragraph').html('<p>An error has occurred, check log! </p>');
             console.log(jqXHR+textStatus+errorThrown);
         },
         dataType: 'json',
