@@ -42,7 +42,7 @@ function ajax_validate(){
         headers: {
             'Authorization': 'Basic ' + btoa(username+':'+password)
         },
-        url: 'http://10.140.72.208/yii_api/api/web/v1/users',
+        url: 'http://tinderbox.mstdev.com/auth/users',
         data: {
             format: 'json'
         },
@@ -52,9 +52,10 @@ function ajax_validate(){
         },
         dataType: 'json',
         success: function(data) {
-            var temp = 'Basic ' + btoa(username+':'+password);
+            //var temp = 'Basic ' + btoa(username+':'+password);
+            var temp = data.auth_key;
             //window.localStorage.getItem("security");
-            window.localStorage.setItem("security", temp);
+            window.localStorage.setItem("token", temp);
             window.location = "main_menu.html"; // Redirecting to other page.
         },
         type: 'GET'
