@@ -4,9 +4,10 @@ $('document').ready(function() {
             withCredentials: true
         },
         headers: {
-            'Authorization': 'Basic ' + btoa('test:test')
+            'Authorization': 'Bearer ' + window.localStorage.getItem("token"),
+            'Content-Type': "application/json",
         },
-        url: 'http://10.140.72.137/yii_api/api/web/v1/faqs',
+        url: 'http://tinderbox.mstdev.com/v1/',
         data: {
             format: 'json'
         },
