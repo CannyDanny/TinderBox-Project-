@@ -177,7 +177,15 @@
     width: 70vw;
     color: black !important;
 }
-.msgNew_to {
+.msgNew_to > select {
+    padding: 1vh !important;
+    margin-right: 6vw !important;
+    width: 64% !important;
+    font-size: 1em;
+    color: #043540 !important;
+}
+.msgNew_to > select > option {
+    color: #043540 !important;
 }
 .msgNew_to > label, .msgNew_content > label{
     font-size:0.6em !important;

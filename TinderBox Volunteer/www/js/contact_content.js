@@ -193,7 +193,7 @@ function newMsg() {
     list += '<option value="2">Supervisor1</option>';
     list += '</select>';
     list += '</li>';
-    list += '<li><label>Subject:</label>';
+    list += '<li class="msgNew_to"><label>Subject:</label>';
     list += '<input type="text" name="msg_sub" id="msg_sub"></li>';
     list += '<li class="msgNew_content">';
     list += '<label>Message:</label>';
