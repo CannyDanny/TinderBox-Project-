@@ -188,7 +188,13 @@ function setMsg(){
 function newMsg() {
     var list = '<li class="msgNew_to">';
     list += '<label>To:</label>';
-    list += '<input type="text" value="1" name="msg_email" id="msg_email"></li>';
+    list += '<select>';
+    list += '<option value="1">Boss</option>';
+    list += '<option value="2">Supervisor1</option>';
+    list += '</select>';
+    list += '</li>';
+    list += '<li><label>Subject:</label>';
+    list += '<input type="text" name="msg_sub" id="msg_sub"></li>';
     list += '<li class="msgNew_content">';
     list += '<label>Message:</label>';
     list += '<textarea name="msg_content" id="msg_content"></textarea></li>';
