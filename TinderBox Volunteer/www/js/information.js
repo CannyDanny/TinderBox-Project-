@@ -12,7 +12,7 @@ $('document').ready(function() {
         },
         error: function(jqXHR, textStatus, errorThrown) {
             $('#set').html('<p>An error has occurred, check log! </p>');
-            console.log(jqXHR+textStatus+errorThrown);
+            alert(jqXHR.status+ '|' +jqXHR.statusText+ '|' +errorThrown);
         },
         dataType: 'json',
         success: function(data) {

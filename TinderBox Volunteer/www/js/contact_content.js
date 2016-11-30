@@ -16,8 +16,8 @@ $('document').ready(function() {
             format: 'json'
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            $('#supervisor').html('<p>An error has occurred, check log! </p>');
-            console.log(jqXHR+textStatus+errorThrown);
+            //$('#supervisor').html('<p>An error has occurred, check log! </p>');
+            alert(jqXHR.status+ '|' +jqXHR.statusText+ '|' +errorThrown);
         },
         dataType: 'json',
         success: function(data) {
@@ -28,6 +28,8 @@ $('document').ready(function() {
                 text += '<span>'+data['phone']+'</span>';
                 text += '<span>'+data['email']+'</span>';
                 $('#supervisor').append(text);
+                var temp = 'tel: '+data['phone'];
+                $('#phone_data').data('phone-number', temp);
 
         },
         type: 'GET'
@@ -38,6 +40,13 @@ $('document').ready(function() {
     //Set focus for default button
     $('#inbox-btn').focus();
 });
+
+// Call function
+function calls(){
+   var n = $('#phone_data').data('phone-number');
+   document.location.href = n;
+}
+
 ////////// Fetch messages from API
 function fetchInbox() {
     var msgInbox = null;
@@ -55,7 +64,7 @@ function fetchInbox() {
         },
         error: function(jqXHR, textStatus, errorThrown) {
             $('#content_ul').html('<p>An error has occurred, check log! </p>');
-            console.log(jqXHR+textStatus+errorThrown);
+            alert(jqXHR.status+' | '+textStatus+' | '+errorThrown);
         },
         dataType: 'json',
         success: function(data) {
@@ -120,7 +129,7 @@ function order(data) {
     list += '<input type="checkbox" name="checkbox-0">';
     list += '<div id="messages">' +
         '<p class="msg_title">' +
-        '<span>'+data.firstname+'</span>' +
+        '<span>'+data.name+'</span>' +
         '<span>'+data.date+'</span>' +
         '</p>';
     list += '<p class="msg_content">'+data.content.substring(0, 37)+'...'+'</p></div>';
@@ -140,35 +149,32 @@ function postNew()
             'Authorization': 'Bearer ' + window.localStorage.getItem("token"),
             'Content-Type': "application/json",
         },
-<<<<<<< HEAD
         url: 'http://tinderbox.mstdev.com/v1/messages',
         data: JSON.stringify(msgData),
-=======
-        url: 'http://10.140.64.129/Tinderbox-Project-Backend/yii_api/api/web/v1/messages',
-        data: msgData,
->>>>>>> origin/development
         error: function(jqXHR, textStatus, errorThrown) {
             $('#content_ul').html('<p>An error has occurred, check log! </p>');
-            console.log(jqXHR+textStatus+errorThrown);
+            alert(jqXHR.status+ '|' +jqXHR.statusText+ '|' +errorThrown);
         },
         dataType: 'json',
-        success: function() {
+        success: function(data) {
             $("#content_ul").empty();
             var res = $("<p>").text("Successfully sent, check inbox!");
             $("#content_ul").append(res);
         },
-        method: 'POST'
+        type: 'POST'
     });
 }
 
 // Set the message fields
 function setMsg(){
+    var subject = "test subject";
     var mto = 1;
     var mfrom = 2;
-    var mdate = date();
+    var mdate = new Date().toISOString().slice(0, 19).replace('T', ' ');
     var mcontent = document.getElementById("msg_content").value;
     var msg =
         {
+            "name": subject,
             "date": mdate,
             "content": mcontent,
             "sender": mfrom,

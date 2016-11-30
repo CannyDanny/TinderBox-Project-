@@ -48,14 +48,14 @@ function ajax_validate(){
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert('Wrong credentials!');
-            alert(jqXHR+textStatus+errorThrown);
+            alert(jqXHR.status+' | '+textStatus+' | '+errorThrown);
             console.log(jqXHR+textStatus+errorThrown);
         },
         dataType: 'json',
         success: function(data) {
-            var temp = 'Basic ' + btoa(username+':'+password);
+            //var temp = 'Basic ' + btoa(username+':'+password);
             //window.localStorage.getItem("security");
-            window.localStorage.setItem("security", temp);
+            window.localStorage.setItem("token", data[0].auth_key);
             window.location = "main_menu.html"; // Redirecting to other page.
         },
         type: 'GET'
