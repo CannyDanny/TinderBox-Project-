@@ -5,14 +5,15 @@ $('document').ready(function() {
         },
         headers: {
             'Authorization': 'Bearer ' + window.localStorage.getItem("token"),
+            'Content-Type': "application/json",
         },
-        url: 'http://tinderbox.mstdev.com/v1/informations',
+        url: 'http://tinderbox.mstdev.com/v1/',
         data: {
             format: 'json'
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            $('#set').html('<p>An error has occurred, check log! </p>');
-            alert(jqXHR.status+ '|' +jqXHR.statusText+ '|' +errorThrown);
+            $('#faq-paragraph').html('<p>An error has occurred, check log! </p>');
+            console.log(jqXHR+textStatus+errorThrown);
         },
         dataType: 'json',
         success: function(data) {

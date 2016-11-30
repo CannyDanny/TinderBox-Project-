@@ -56,6 +56,20 @@ i {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.text-alignment {
+    font-size: 1.5em;
+    padding-top: 3vh;
+    width: 17vw;
+    float: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.text-alignment2 {
+    display: inline-block;
+    width: 38vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
 #insideContent {
     opacity: 0.9; !important;
     width: 96vw !important;

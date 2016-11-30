@@ -53,6 +53,9 @@ i {
 #content1 {
     width: 96vw !important;
 }
+.align-left {
+    text-align: left;
+}
 #content1 .ui-btn {
     margin: 1em auto !important;
     padding: 2em 1em !important;
