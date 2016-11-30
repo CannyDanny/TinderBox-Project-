@@ -42,12 +42,13 @@ function ajax_validate(){
         headers: {
             'Authorization': 'Basic ' + btoa(username+':'+password)
         },
-        url: 'http://10.140.72.208/yii_api/api/web/v1/users',
+        url: 'http://tinderbox.mstdev.com/auth/users',
         data: {
             format: 'json'
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert('Wrong credentials!');
+            alert(jqXHR+textStatus+errorThrown);
             console.log(jqXHR+textStatus+errorThrown);
         },
         dataType: 'json',

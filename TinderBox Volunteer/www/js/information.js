@@ -4,9 +4,9 @@ $('document').ready(function() {
             withCredentials: true
         },
         headers: {
-            'Authorization': 'Basic ' + btoa('test:test')
+            'Authorization': 'Bearer ' + window.localStorage.getItem("token"),
         },
-        url: 'http://10.140.102.233/yii_api/api/web/v1/informations',
+        url: 'http://tinderbox.mstdev.com/v1/informations',
         data: {
             format: 'json'
         },
