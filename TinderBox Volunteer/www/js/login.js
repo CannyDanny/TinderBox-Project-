@@ -3,10 +3,12 @@
  */
 
 // Redirect if user logged in already
-$('document').ready(function() {
-    var user = window.localStorage.getItem("security");
+$(document).ready(function() {
+    var user = window.localStorage.getItem("token");
     if((user !== null) && (user !== "")){
         window.location = "main_menu.html";
+    }else{
+        hidestatus();
     }
 });
 

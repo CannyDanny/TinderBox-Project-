@@ -69,3 +69,22 @@
 .info{
     font-size: 0.8em !important;
 }
+
+#language{
+    color: white;
+    float: right;
+    font-size: 4vw;
+    right: 2vw;
+    top: 1vw;
+    position: fixed;
+}
+
+#logout{
+    color: white;
+    float: left;
+    font-size: 4vw;
+    left: 2vw;
+    top: 1vw;
+    position: fixed;
+    z-index: 999;
+}
