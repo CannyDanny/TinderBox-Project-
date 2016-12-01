@@ -2,7 +2,7 @@
     Created by zongy on 13-10-2016.
 **/
 * { padding: 0; margin: 0; }
-#contact-page {
+#page_contact {
 
     background-image: url("images/background-imgs/contact_bg.jpg");
     background-size: cover !important;
