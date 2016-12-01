@@ -36,15 +36,15 @@ i {
     height: 9vh;
     background-color: #043540;
     position: relative;
-
+    text-align: center;
 }
 
 
 .find a{
     color:white!important;
     text-decoration: none!important;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    /* left: 30%; */
     position: relative!important;
 }
 .headline-box {
