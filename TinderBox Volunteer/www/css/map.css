@@ -23,6 +23,7 @@ i {
     justify-content: space-between;
     background: none;
     border: none;
+    background-color: transparent !important;
 }
 .back-btn {
     width: 18vw;
@@ -61,11 +62,25 @@ i {
     transform: translate(-50%, -50%);
 }
 
+#pageone{
+    background-color: transparent !important;
+}
 
-#map{
+#content_main{
     width: 100vw!important;
-    height: 100vw!important;
-    position: absolute;
+    height: 100vh!important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    padding: 0px;
+}
+
+#map {
+    width: 100vw!important;
+    height: 100vh!important;
+    top: 0px;
+    left: 0px;
 }
 
 #myPanel{

@@ -7,11 +7,8 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "TinderBox Volunteer"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "TinderBox Volunteer"
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.mstdev.tinderbox"
         }
     },
     "dependent_plugins": {}
