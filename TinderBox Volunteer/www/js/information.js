@@ -18,7 +18,7 @@ $('document').ready(function() {
         success: function(data) {
             var i=0;
             for (i = 0; i < data.length; i++) {
-                var content = "<div data-role='collapsible' id='set" + i + "'><h3>" + data[i].title + "</h3><p>" + data[i].content + "</p></div>";
+                var content = "<div data-role='collapsible' data-collapsed-icon='carat-d' data-expanded-icon='carat-u' data-iconpos='right' id='set" + i + "' class='ui-btn ui-shadow'><h3>" + data[i].title + "</h3><p>" + data[i].content + "</p></div>";
                 $("#set").append( content ).collapsibleset('refresh');
             }
         },
