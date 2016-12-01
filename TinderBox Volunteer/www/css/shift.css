@@ -58,61 +58,64 @@ i {
 }
 .text-alignment {
     font-size: 1.5em;
-    padding-top: 3vh;
-    width: 17vw;
+    /*padding-top: 3vh;*/
+    margin-top: 3vh;
+    width: 30%;
     float: left;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    /*padding-left: 1vw;
+    padding-right: 1vw;*/
+    text-align: left;
 }
 .text-alignment2 {
     display: inline-block;
-    width: 38vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    width: 60%;
+    /*padding-left: 1vw;
+    padding-right: 1vw;*/
+    float: right;
+    text-align: left;
 }
-#insideContent {
-    opacity: 0.9; !important;
+
+.inside-content {
+    /*opacity: 0.9; !important;*/
     width: 96vw !important;
+    margin: auto !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
-.invitation a{
+
+.status-okay a{
     background-color:#043540 !important;
 }
-.invitation .ui-collapsible-content {
+.status-okay .ui-collapsible-content {
     background-color: #095b6e !important;
 }
-.invitation .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
+.status-okay .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
     background-color: #095b6e !important;
     font-size: 0.7em;
     text-align: center;
 }
 
-#insideContent2 {
-    opacity: 0.9; !important;
-    width: 96vw !important;
-}
-.invitation2 a {
+.status-pending a {
     background-color:#ffc922 !important;
 
 }
-.invitation2 .ui-collapsible-content {
+.status-pending .ui-collapsible-content {
     background-color: #095b6e !important;
 }
-.invitation2 .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
+.status-pending .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
     background-color: #095b6e !important;
     font-size: 0.7em;
     text-align: center;
 }
-#insideContent3 {
-    opacity: 0.9; !important;
-    width: 96vw !important;
-}
-.invitation3 a{
+
+.status-invitation a{
     background-color: #f56b71 !important;
 }
-.invitation3 .ui-collapsible-content {
+.status-invitation .ui-collapsible-content {
     background-color: #095b6e !important;
 }
-.invitation3 .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
+.status-invitation .ui-listview > .ui-li-static.ui-last-child, .ui-listview > .ui-li-divider.ui-last-child, .ui-listview > li.ui-last-child > a.ui-btn {
     background-color: #095b6e !important;
     font-size: 0.7em;
     text-align: center;
@@ -120,12 +123,21 @@ i {
 .buttonsCollaps {
     opacity: 0.9; !important;
     width: 96vw;
-    margin: 1vh auto 0 auto;
+    margin: 27px auto 0 auto;
     display: flex;
     justify-content: space-between;
     background: none;
     border: none;
     color: #fff9f4;
+}
+#set{
+    padding: 0 !important;
+    width: 96vw;
+    margin: auto;
+    margin-top: 2vw;
+}
+li{
+    margin: 4vw !important;
 }
 .show-map-btn {
     margin-top: -1.75em;
@@ -185,15 +197,18 @@ i {
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
 background-color: transparent !important;
 }
-.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+
+.status-okay .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
     opacity: 0.9;
     background-color: #043540 !important;
-    border: none;
 }
-.inside-content {
-    margin: auto !important;
-    padding-left: 0px;
-    padding-right: 0px;
+.status-pending .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #ffc922 !important;
+}
+.status-invitation .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+    opacity: 0.9;
+    background-color: #f56b71 !important;
 }
 .ui-corner-all {
     border-radius: initial !important;
