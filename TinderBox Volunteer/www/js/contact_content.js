@@ -26,7 +26,7 @@ $('document').ready(function() {
                 text += '<span>'+data['title']+'</span>';
                 text += '<span>'+data['team']+'</span>';
                 text += '<span>'+data['phone']+'</span>';
-                text += '<span>'+data['email']+'</span>';
+                text += '<span>'+data['email']+'</span></p>';
                 $('#supervisor').append(text);
                 var temp = 'tel: '+data['phone'];
                 $('#phone_data').data('phone-number', temp);
@@ -133,7 +133,7 @@ function order(data) {
         '<span>'+data.date+'</span>' +
         '</p>';
     list += '<p class="msg_content">'+data.content.substring(0, 37)+'...'+'</p></div>';
-    list += '<i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i>';
+    list += '<i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i></li>';
     return list;
 }
 
