@@ -167,8 +167,8 @@ function postNew()
 
 // Set the message fields
 function setMsg(){
-    var subject = "test subject";
-    var mto = 1;
+    var subject = document.getElementById("msg_sub").value;;
+    var mto = document.getElementById("msg_to").value;;
     var mfrom = 2;
     var mdate = new Date().toISOString().slice(0, 19).replace('T', ' ');
     var mcontent = document.getElementById("msg_content").value;
@@ -188,9 +188,9 @@ function setMsg(){
 function newMsg() {
     var list = '<li class="msgNew_to">';
     list += '<label>To:</label>';
-    list += '<select>';
+    list += '<select name="msg_to">';
     list += '<option value="1">Boss</option>';
-    list += '<option value="2">Supervisor1</option>';
+    list += '<option value="1">Supervisor1</option>';
     list += '</select>';
     list += '</li>';
     list += '<li class="msgNew_to"><label>Subject:</label>';
