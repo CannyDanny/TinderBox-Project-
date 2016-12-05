@@ -11,14 +11,31 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/authentication.js"></script>
+    <script type="text/javascript" src="js/backbutton.js"></script>
     <script type="text/javascript" src="js/hidestatus.js"></script>
     <script type="text/javascript" src="js/main_menu.js"></script>
 </head>
 <body onload="onLoad()">
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Logout?</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Are you sure you want to logout?</h3>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow" onClick="logout()">Logout</a>
+    </div>
+</div>
 <div id="page_menu" data-role="page">
-
+    <div id="language">
+        DANSK
+    </div>
+    <div id="logout" onclick="logout()">
+        LOGOUT
+    </div>
     <div id="page_menu_header" data-role="header">
-        <div id="app_logo"></div>
+        <div id="app_logo"></div> 
     </div><!-- /header -->
 
     <div id="page_menu_content" role="main" class="ui-content">

@@ -26,7 +26,7 @@ $('document').ready(function() {
                 text += '<span>'+data['title']+'</span>';
                 text += '<span>'+data['team']+'</span>';
                 text += '<span>'+data['phone']+'</span>';
-                text += '<span>'+data['email']+'</span>';
+                text += '<span>'+data['email']+'</span></p>';
                 $('#supervisor').append(text);
                 var temp = 'tel: '+data['phone'];
                 $('#phone_data').data('phone-number', temp);
@@ -133,7 +133,7 @@ function order(data) {
         '<span>'+data.date+'</span>' +
         '</p>';
     list += '<p class="msg_content">'+data.content.substring(0, 37)+'...'+'</p></div>';
-    list += '<i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i>';
+    list += '<i class="fa fa-bars fa-2x burger-menu" aria-hidden="true"></i></li>';
     return list;
 }
 
@@ -167,8 +167,8 @@ function postNew()
 
 // Set the message fields
 function setMsg(){
-    var subject = "test subject";
-    var mto = 1;
+    var subject = document.getElementById("msg_sub").value;;
+    var mto = document.getElementById("msg_to").value;;
     var mfrom = 2;
     var mdate = new Date().toISOString().slice(0, 19).replace('T', ' ');
     var mcontent = document.getElementById("msg_content").value;
@@ -188,7 +188,13 @@ function setMsg(){
 function newMsg() {
     var list = '<li class="msgNew_to">';
     list += '<label>To:</label>';
-    list += '<input type="text" value="1" name="msg_email" id="msg_email"></li>';
+    list += '<select name="msg_to">';
+    list += '<option value="1">Boss</option>';
+    list += '<option value="1">Supervisor1</option>';
+    list += '</select>';
+    list += '</li>';
+    list += '<li class="msgNew_to"><label>Subject:</label>';
+    list += '<input type="text" name="msg_sub" id="msg_sub"></li>';
     list += '<li class="msgNew_content">';
     list += '<label>Message:</label>';
     list += '<textarea name="msg_content" id="msg_content"></textarea></li>';

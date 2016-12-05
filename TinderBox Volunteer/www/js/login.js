@@ -3,10 +3,21 @@
  */
 
 // Redirect if user logged in already
-$('document').ready(function() {
-    var user = window.localStorage.getItem("security");
+$(document).ready(function() {
+    var user = window.localStorage.getItem("token");
     if((user !== null) && (user !== "")){
         window.location = "main_menu.html";
+    }else{
+        setTimeout(function() {
+            $('#logo').addClass('animate-splash');
+        },1000);
+
+        setTimeout(function() {
+            $('#language').addClass('animate-appear');
+            $('#login').addClass('animate-appear');
+        }, 2000);
+
+        hidestatus();
     }
 });
 

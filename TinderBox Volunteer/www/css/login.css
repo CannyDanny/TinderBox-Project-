@@ -15,21 +15,23 @@ body{
 }
 
 #language{
-    color: white;
+    color: #fff9f4;
     float: right;
     font-size: 4vw;
     margin-right: 2vw;
     margin-top: 1vw;
+    opacity: 0;
+    visibility: hidden;
 }
 .logo{
     position: relative;
     height: 100px;
     width: 100px;
     padding: 2vh;
-    background-color: white;
+    background-color: #fff9f4;
     border-radius: 20px;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 40vh;
 }
 #logoimg{
     width: 100%;
@@ -44,21 +46,25 @@ body{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold !important;
+    opacity: 0;
+    visibility: hidden;
 }
 input:focus{
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif !important;
     color: rgba(4,53,64,0.9) !important;
+    font-size: 1.5em !important;
 }
 input::-webkit-input-placeholder {
     color: rgba(4,53,64,0.9) !important;
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
     color: rgba(4,53,64,0.9) !important;
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
 }
@@ -66,19 +72,21 @@ input:-moz-placeholder { /* Firefox 18- */
 input::-moz-placeholder {  /* Firefox 19+ */
     color: rgba(4,53,64,0.9) !important;
     letter-spacing: 2px;
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: bold;
 
 }
 
 input:-ms-input-placeholder {
     color: rgba(4,53,64,0.9) !important;
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
 }
 
 #username, #password{
+    font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif !important;
+    letter-spacing: 2px !important;
     vertical-align: middle;
     padding-bottom: 3%;
     padding-top: 3%;
@@ -87,7 +95,7 @@ input:-ms-input-placeholder {
     left: 4vw;
     top: 2vw;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: rgba(4,53,64,0.9) !important;
 }
 
@@ -100,7 +108,7 @@ input:-ms-input-placeholder {
     margin-right: auto;
     padding-top: 5%;
     padding-bottom: 5%;
-    color: white;
+    color: #fff9f4;
     background-color: transparent;
 }
 #submitbutton{
@@ -108,7 +116,7 @@ input:-ms-input-placeholder {
     margin-right: auto !important;
     padding-top: 5vw !important;
     padding-bottom: 5vw !important;
-    color: white !important;
+    color: #fff9f4 !important;
     background-color: transparent !important;
     width: auto;
     font-size: 1.5em;
@@ -118,10 +126,29 @@ input:-ms-input-placeholder {
     width: 25%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
+    padding-top: 4%;
     padding-bottom: 2%;
-    color: white;
+    color: #fff9f4;
     background-color: transparent;
     border-radius: 10px;
 
+}
+
+.animate-splash{
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    margin-top: 15vh !important;
+}
+
+.animate-appear{
+    -webkit-transition: visibility 0s, opacity 2s linear;
+    -moz-transition: visibility 0s, opacity 2s linear;
+    -ms-transition: visibility 0s, opacity 2s linear;
+    -o-transition: visibility 0s, opacity 2s linear;
+    transition: visibility 0s, opacity 2s linear;
+    opacity: 1 !important;
+    visibility: visible !important;
 }

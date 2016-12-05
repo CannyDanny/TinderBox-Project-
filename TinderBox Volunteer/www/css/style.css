@@ -5,14 +5,21 @@
 html, body, div{
     font-family: EvelethThin !Important;
     color: #fff9f4 !important;
+    text-shadow: none !important;
 }
 
-body, input, select, textarea, button, .ui-btn {
+input, select, textarea, button, .ui-btn {
     font-family: EvelethThin !Important;
     color: #fff9f4 !important;
+    text-shadow: none !important;
+}
+
+h1{
+    font-family: EvelethThin !Important;
 }
 
 .ui-btn-up-a,.ui-btn-hover-a,.ui-btn-down-a,.ui-bar-a,.ui-body-a,.ui-btn-up-a,.ui-btn-hover-a,.ui-btn-down-a,.ui-body-a input,.ui-body-a select,.ui-body-a textarea,.ui-body-a{
     font-family: EvelethThin !Important;
     color: #fff9f4 !important;
+    text-shadow: none !important;
 }

@@ -23,6 +23,7 @@ i {
     justify-content: space-between;
     background: none;
     border: none;
+    background-color: transparent !important;
 }
 .back-btn {
     width: 18vw;
@@ -35,15 +36,15 @@ i {
     height: 9vh;
     background-color: #043540;
     position: relative;
-
+    text-align: center;
 }
 
 
 .find a{
-    color:white!important;
+    color:#fff9f4!important;
     text-decoration: none!important;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    /* left: 30%; */
     position: relative!important;
 }
 .headline-box {
@@ -61,11 +62,25 @@ i {
     transform: translate(-50%, -50%);
 }
 
+#page_map{
+    background-color: transparent !important;
+}
 
-#map{
+#content_main{
     width: 100vw!important;
-    height: 100vw!important;
-    position: absolute;
+    height: 100vh!important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    padding: 0px;
+}
+
+#map {
+    width: 100vw!important;
+    height: 100vh!important;
+    top: 0px;
+    left: 0px;
 }
 
 #myPanel{
